@@ -1,0 +1,5 @@
+@mixin desktop-first ($max){
+    @media only screen and (max-width:$max){
+        @content;
+    }
+}

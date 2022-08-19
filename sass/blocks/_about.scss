@@ -1,0 +1,43 @@
+.about {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../../images/about-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 69px 80px 69px 81px;
+    margin-bottom: 150px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    max-width: 475px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.8px;
+    color: $white-color;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    border: 1.5px solid $white-color;
+    padding: 14px 22px;
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    transition: all 0.5s ease;
+  }
+
+  &__link:hover {
+    background-color: $white-color;
+    color: $second-color;
+  }
+}
