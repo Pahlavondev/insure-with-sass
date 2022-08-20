@@ -114,3 +114,38 @@
     bottom: 0;
   }
 }
+
+@include desktop-first(410px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__img {
+    background-image: url(../../images/mobile-phone-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero__title {
+    display: inline-block;
+    margin: 0;
+    max-width: 327px;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    color: $white-color;
+    margin-bottom: 10px;
+  }
+  .hero__title::before {
+    content: "";
+    display: none;
+    width: 150px;
+    height: 1px;
+    background-color: $white-color;
+    margin-bottom: 63px;
+  }
+}

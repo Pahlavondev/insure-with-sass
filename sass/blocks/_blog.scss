@@ -57,3 +57,65 @@
     color: $main-color;
   }
 }
+
+@include desktop-first(410px) {
+  .blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+
+    &__desc {
+      margin: 0;
+      max-width: 327px;
+      font-family: "DM Serif Display", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -0.67px;
+      color: $second-color;
+      margin-bottom: 80px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__desc::before {
+      content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 1px;
+      background-color: #c396c6;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: "DM Serif Display", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: -0.4px;
+      color: $second-color;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -640,6 +640,38 @@ body {
     bottom: 0;
   }
 }
+@media only screen and (max-width: 410px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__img {
+    background-image: url(../../images/mobile-phone-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero__title {
+    display: inline-block;
+    margin: 0;
+    max-width: 327px;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .hero__title::before {
+    content: "";
+    display: none;
+    width: 150px;
+    height: 1px;
+    background-color: #ffffff;
+    margin-bottom: 63px;
+  }
+}
 .blog__inner {
   margin-bottom: 158px;
 }
@@ -691,6 +723,62 @@ body {
   color: #837d88;
 }
 
+@media only screen and (max-width: 410px) {
+  .blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+  }
+  .blog__desc {
+    margin: 0;
+    max-width: 327px;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    color: #2c2830;
+    margin-bottom: 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .blog__desc::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 1px;
+    background-color: #c396c6;
+    margin-bottom: 40px;
+  }
+  .blog__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.4px;
+    color: #2c2830;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .blog__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .about__inner {
   display: flex;
   justify-content: space-between;
